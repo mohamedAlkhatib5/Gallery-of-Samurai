@@ -1,0 +1,453 @@
+@font-face {
+    font-family: 'Masberco Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Masberco Regular'), url('MasbercoRegular-p7KYv.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Niagara Solid';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Niagara Solid'), url('Niagara Solid.woff') format('woff');
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 0;
+}
+
+.section.active {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+
+.section1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/mainimg.png);
+    background-position: center center;
+    display: flex;
+}
+
+.container1 {
+    width: 100%;
+    display: flex;
+}
+
+.frame {
+    background: rgba(217, 217, 217, 0.01);
+    backdrop-filter: blur(10px);
+    width: 100px;
+}
+
+.text {
+    background: rgba(217, 217, 217, 0.01);
+    backdrop-filter: blur(10px);
+    width: 50%;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.text p {
+    color: rgba(177, 167, 166, 1);
+}
+
+.title {
+    color: rgba(186, 24, 27, 1);
+    font-family: 'Masberco Regular';
+    font-size: 150px;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: 20px;
+}
+
+.title2 {
+    color: rgba(186, 24, 27, 1);
+    font-size: 40px;
+    margin-top: -30px;
+}
+
+.title2 span {
+    color: rgba(202, 103, 2, 1);
+}
+
+.text a {
+    color: rgba(202, 103, 2, 1);
+    text-decoration: none;
+}
+
+.text a:hover {
+    color: rgba(186, 24, 27, 1);
+}
+
+.links {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+    padding-top: 300px;
+}
+
+.links ul li {
+    list-style: none;
+    margin: 10px;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: rgba(177, 167, 166, 1);
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.links ul li:first-child a {
+    color: rgba(202, 103, 2, 1);
+}
+
+.links ul li a:hover {
+    color: rgba(202, 103, 2, 1);
+}
+
+.frameleft1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.frameleft1 a {
+    color: rgba(186, 24, 27, 1);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.frameleft1 p {
+    color: rgba(186, 24, 27, 1);
+    margin-inline: auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Niagara Solid';
+    background: rgba(217, 217, 217, 0.01);
+    backdrop-filter: blur(10px);
+}
+
+
+/* ************2************** */
+
+.section2 {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.text2 {
+    padding-inline: 100px;
+    padding-top: 100px;
+    width: 50%;
+    letter-spacing: 2px;
+}
+
+.text2 p {
+    color: rgba(177, 167, 166, 1);
+}
+
+.img img {
+    width: 100%;
+    padding-inline: 20px;
+}
+
+.text2 a {
+    color: rgba(202, 103, 2, 1);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.text2 a:hover {
+    color: rgba(186, 24, 27, 1);
+}
+
+.pag {
+    margin-top: 100px;
+}
+
+.pag p {
+    color: rgba(155, 34, 38, 1);
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.text2 .title2 {
+    font-size: 100px;
+    font-family: 'Niagara Solid';
+}
+
+.section2 .frameleft1 {
+    background-color: black;
+}
+
+
+/* ************3************** */
+
+.section3 {
+    background-color: black;
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.top-div {
+    width: 100%;
+    display: flex;
+}
+
+.text3 {
+    background-color: black;
+    padding-left: 50px;
+    width: 47%;
+    padding-top: 150px;
+}
+
+.text3 p {
+    color: rgba(177, 167, 166, 1);
+}
+
+.text3 a {
+    color: rgba(202, 103, 2, 1);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.text3 .title3 {
+    color: rgba(155, 34, 38, 1);
+    font-size: 120px;
+    font-weight: 400;
+    font-family: 'Niagara Solid';
+}
+
+.img-3 {
+    display: flex;
+}
+
+.img-3 img {
+    width: 50%;
+}
+
+
+/* ************4************** */
+
+.section4 {
+    background: url(../img/img-4.png);
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    background-position: center;
+}
+
+.container4 {
+    width: 100%;
+}
+
+.history-t {
+    background-color: rgba(102, 7, 9, 0.716);
+    backdrop-filter: blur(40px);
+    color: rgba(177, 167, 166, 1);
+    padding: 50px;
+    width: 400px;
+    margin-top: 100px;
+    margin-left: 80px;
+}
+
+.title4 {
+    color: rgba(202, 103, 2, 1);
+    font-size: 100px;
+    font-family: 'Niagara Solid';
+}
+
+.history-t a {
+    color: rgba(202, 103, 2, 1);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/* ************** footer**************** */
+
+footer {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+
+.img-contact img {
+    height: 100%;
+}
+
+.contact {
+    width: 50%;
+    margin-top: 50px;
+    padding-left: 10px;
+}
+
+.title-footer {
+    color: rgba(155, 34, 38, 1);
+    font-size: 80px;
+    font-family: 'Niagara Solid';
+}
+
+.icon {
+    display: flex;
+    margin-top: 20px;
+}
+
+.icon a {
+    color: rgba(103, 98, 98, 1);
+    margin-inline: 10px;
+    font-size: 40px;
+}
+
+.icon a:hover {
+    color: rgba(202, 103, 2, 1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+form input {
+    width: 70%;
+    margin-bottom: 30px;
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    height: 40px;
+    color: white;
+}
+
+form input:focus::placeholder {
+    color: rgba(202, 103, 2, 1);
+}
+
+form button {
+    border: none;
+    color: rgba(202, 103, 2, 1);
+    margin-top: 100px;
+    text-align: start;
+    width: 70%;
+    background-color: black;
+    font-size: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 1)
+}
+
+form button:hover {
+    border: 1px solid rgba(202, 103, 2, 1);
+    border-radius: 20px;
+}
+
+@media (max-width: 890px) {
+    .section {
+        overflow-y: auto;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    .frame {
+        background: rgba(217, 217, 217, 0.01);
+        backdrop-filter: blur(0px);
+        width: 40px;
+    }
+    .container1 {
+        flex-direction: column;
+        width: 100%;
+    }
+    .text {
+        width: 100%;
+        order: 2;
+        padding-bottom: 20px;
+        padding: 10px;
+        background: rgba(217, 217, 217, 0);
+        backdrop-filter: blur(0px);
+    }
+    .title {
+        font-style: 100px;
+    }
+    .links {
+        order: 1;
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+        background: rgba(217, 217, 217, 0);
+        backdrop-filter: blur(40px);
+        text-align: center;
+        align-items: center;
+    }
+    .container2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background: url(../img/img2.png);
+        background-position: center;
+    }
+    .text2 {
+        width: 100%;
+        padding-top: 50px;
+        padding-inline: 0;
+        margin: 0;
+        background-position: center;
+        background: rgba(7, 7, 7, 0.258);
+        backdrop-filter: blur(10px);
+        height: 100vh;
+    }
+    .text2>p {
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .img {
+        display: none;
+    }
+    .top-div {
+        flex-direction: column;
+    }
+    .text3 {
+        padding: 20px;
+        text-align: center;
+        margin-inline: 25%;
+    }
+    .history-t {
+        padding: 10px;
+        margin: 5%;
+    }
+    .img-contact {
+        width: 50%;
+    }
+    .img-contact img {
+        width: 100%;
+    }
+    .icon a {
+        font-size: 20px;
+    }
+}
